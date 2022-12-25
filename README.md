@@ -16,7 +16,7 @@
 
     All of the dependencies as node modules are also listed within this file. 
 
-```json
+```javascript
 {
     "name": "website-final",
     "version": "1.0.0",
@@ -53,7 +53,7 @@
 
     Example: 
 
-    ```javascript
+```javascript
     const path = require('path'); // This essentially exports the entire environment path for the package manager 
 
     module.exports = { 
@@ -63,14 +63,14 @@
         path: path.resolve(__dirname, 'dist'), // Minimized/compiled 'entry' files will then be moved to the folder 'dist'
     },
     };
-    ```
+```
 
     The above configuration will work if you only need your index.html file to be working properly. In fact, to render the index.js file into your HTML file, you will need to add a series of dependencies that will take your pre-existing index.html file and format them as to include the .js files as "scripts" in your static page. 
 
     Keep in mind that our .js files will not only be JavaScript, but they're React.js files with extensions of .jsx and .tsx. React is important because you can insert elements into the body of an HTML page by simply creating those elements in a Javascript/Typescript file containing the React and ReactDOM modules/dependencies. 
  
 
-    ```javascript
+```javascript
     const HtmlWebpackPlugin = require('html-webpack-plugin'); // Plugin to render script code on HTML files
     const path = require('path');
 
@@ -79,7 +79,7 @@
 
         output: {
             filename: 'bundle.js',
-            path: path.resolve(__dirname, "build") // Remember, our 'index.js' file will be renamed to 'bundle.js' and moved to './build'
+            path: path.resolve(__dirname, 'dist') // Remember, our 'index.js' file will be renamed to 'bundle.js' and moved to './dist'
         },
 
         devServer: { // Specify development server configurations... 
@@ -94,4 +94,4 @@
 
         mode: "development" // Specify compilation mode... either for production (minified files) or development 
     }
-    ```
+```
