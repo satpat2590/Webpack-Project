@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
@@ -7,11 +8,37 @@ module.exports = {
 
     output: {
         filename: 'bundle.js',
-        path: path.resolve(__dirname, "build")
+        path: path.resolve(__dirname, "dist")
     },
 
     devServer: {
-        port: 3000
+        static: {
+            directory: path.resolve(__dirname, "dist"), 
+        },
+        port: 3000,
+    },
+
+    module: {
+        rules: [
+            {
+                test: /\.(js|jsx)$/,
+                exclude: /node_modules/,
+                use: ["babel-loader"],
+            },
+            {
+                test: /\.(ts|tsx)$/,
+                use: ["ts-loader"],
+                exclude: /node_modules/,
+            },
+            {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader'],
+            },
+            {
+                test: /\.scss$/,
+                use: ['style-loader', 'css-loader', 'sass-loader'],
+            },
+        ],
     },
     
     plugins: [
@@ -20,7 +47,14 @@ module.exports = {
         }),
     ],
 
-    mode: "development"
-}
+    mode: "development",
 
+    resolve: {
+        extensions: [
+        '.tsx',
+        '.ts',
+        '.js'
+        ],
+  },
+}
 

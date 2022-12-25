@@ -14,7 +14,12 @@
 
     The package.json contains the scripts for building the entire application. There is a development build script, a deployment build script, and one for general testing. 
 
-    All of the dependencies as node modules are also listed within this file. 
+    All of the dependencies as node modules are also listed within this file. Note that not ALL of the production-required 
+    dependencies are listed below. 
+
+    You will need to install dependencies that you need for your custom application. 
+
+    A really well made resource for configuring your front-end web-development project is this website: https://createapp.dev/
 
 ```javascript
 {
@@ -95,3 +100,28 @@
         mode: "development" // Specify compilation mode... either for production (minified files) or development 
     }
 ```
+
+## Additional Helpful Tips
+
+
+### 1. 
+
+You can check which browsers your application supports by running... 
+```bash
+    npx browserslist
+```
+
+Browser configuration can be changed through the .browserslist file in the root repository. 
+
+### 2.
+
+You can serve a static folder to be hosted locally by running...
+```bash
+    npx serve [foldername]
+```
+
+Also, the serve feature can be used through the command...
+```bash
+    npx webpack watch
+```
+
