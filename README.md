@@ -2,24 +2,28 @@
 
 ## 1. ./dist/
 
-    Dist folder contains the webpack assembled beginning JavaScipt file and then outputs it within the dist folder. The dist also contains the HTML file. 
+Dist folder contains the webpack assembled beginning JavaScipt file and then outputs it within the dist folder. 
 
-    This folder will be continuously reinstalled, so changes will NOT be pushed to the GitHub. 
+The dist also contains the HTML file. 
+
+This folder will be continuously reinstalled, so changes will NOT be pushed to the GitHub. 
 
 ## 2. ./src/
 
-    Src folder will contain all of the JS, TS, TSX, or JSX files that you will need in order to compile into the one final .js file within the dist folder. Src may also contain any CSS or SCSS files for styling. 
+Src folder will contain all of the JS, TS, TSX, or JSX files that you will need in order to 
+compile into the one final .js file within the dist folder. Src may also contain any CSS or SCSS files for styling. 
 
 ## 3. ./package.json
 
-    The package.json contains the scripts for building the entire application. There is a development build script, a deployment build script, and one for general testing. 
+The package.json contains the scripts for building the entire application. 
+There is a development build script, a deployment build script, and one for general testing. 
 
-    All of the dependencies as node modules are also listed within this file. Note that not ALL of the production-required 
-    dependencies are listed below. 
+All of the dependencies as node modules are also listed within this file. Note that not ALL of the production-required 
+dependencies are listed below. 
 
-    You will need to install dependencies that you need for your custom application. 
+You will need to install dependencies that you need for your custom application. 
 
-    A really well made resource for configuring your front-end web-development project is this website: https://createapp.dev/
+A really well made resource for configuring your front-end web-development project is this website: https://createapp.dev/
 
 ```javascript
 {
@@ -50,13 +54,16 @@
 
 ## 4. ./webpack.config.js
 
-    Webpack.config.js is the configuration file for Webpack. This tells webpack which file to use as the source, and also which directory to output it as well as the name. 
+Webpack.config.js is the configuration file for Webpack. This tells webpack which file to use as the source, 
+and also which directory to output it as well as the name. 
 
-    Webpack is suitable for also using different "loaders". Loaders are capable of essentially breaking down any file type into another one. For example, you can use a 'ts-loader' to compile from a .ts file to a .js file. Also, you can use babel as a loader to convert .js files to ES5 format, which is essentially backwards compatibility. 
+Webpack is suitable for also using different "loaders". Loaders are capable of essentially 
+breaking down any file type into another one. For example, you can use a 'ts-loader' to compile from a .ts file to a .js file. 
+Also, you can use babel as a loader to convert .js files to ES5 format, which is essentially backwards compatibility. 
 
-    You can optionally also use a 'style-loader', 'css-loader', and a 'sass-loader' for .css and .scss files. 
+You can optionally also use a 'style-loader', 'css-loader', and a 'sass-loader' for .css and .scss files. 
 
-    Example: 
+Example: 
 
 ```javascript
     const path = require('path'); // This essentially exports the entire environment path for the package manager 
@@ -70,9 +77,13 @@
     };
 ```
 
-    The above configuration will work if you only need your index.html file to be working properly. In fact, to render the index.js file into your HTML file, you will need to add a series of dependencies that will take your pre-existing index.html file and format them as to include the .js files as "scripts" in your static page. 
+The above configuration will work if you only need your index.html file to be working properly. 
+In fact, to render the index.js file into your HTML file, you will need to add a series of dependencies 
+that will take your pre-existing index.html file and format them as to include the .js files as "scripts" in your static page. 
 
-    Keep in mind that our .js files will not only be JavaScript, but they're React.js files with extensions of .jsx and .tsx. React is important because you can insert elements into the body of an HTML page by simply creating those elements in a Javascript/Typescript file containing the React and ReactDOM modules/dependencies. 
+Keep in mind that our .js files will not only be JavaScript, but they're React.js files with extensions of .jsx and .tsx. 
+React is important because you can insert elements into the body of an HTML page by simply creating those elements in a 
+Javascript/Typescript file containing the React and ReactDOM modules/dependencies. 
  
 
 ```javascript
