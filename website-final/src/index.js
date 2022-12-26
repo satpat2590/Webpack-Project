@@ -1,10 +1,21 @@
-
+import Hello from './App';
+import React from 'react';
+import { createRoot } from 'react-dom/client';
 
 const people = {
     emeralds: 450,
     jesusChrist: 40000,
     Johnny: 'Appleseed'
 }
+
+function How(props) {
+    return (
+        <div>
+            <h1>Hey I remember you!</h1>
+            <h2>Your name is {props.name}</h2>
+        </div>
+    );
+};
 /*
     This function simply takes in an argument of the number of Array elements 'times' 
     and creates an Array with the same number of specified elements. 
@@ -27,8 +38,19 @@ const people = {
 
     document.body.append(name);
 */
+
+const helloRet = document.getElementById('root');
+const root = createRoot(helloRet);
+
+root.render(
+    <>
+    <Hello />
+    <How name="Jeremiah"/>
+    </>
+    );
+
 const loopHello = (times) => 
-    new Array(times).fill(1).map((_, i) => `Hello ${i + 1}`);
+    new Array(times).fill(1).map((_, i) => `Hello from index.js ${i + 1}`);
 
 const newDiv = document.createElement(`div`);
 newDiv.innerHTML = loopHello(10).join(`<br/>`);

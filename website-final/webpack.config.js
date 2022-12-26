@@ -46,9 +46,6 @@ module.exports = {
             template: path.resolve(__dirname, "public", "index.html"),
         }),
     ],
-
-    mode: "development",
-
     resolve: {
         extensions: [
         '.tsx',
