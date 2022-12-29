@@ -1,13 +1,14 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
-  return (
+  return ( 
     <div className={styles.container}>
       <Head>
+        <link rel="icon" href="/vercel.svg" />
         <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
@@ -19,11 +20,17 @@ export default function Home() {
           Get started by editing <code>pages/index.js</code>
         </p>
 
+        <Image 
+          src="/profile-image.jpg" 
+          alt="Favorite Icon" 
+          width="200" 
+          height="250"/>  
+
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+            <p>Find in-depth information about Next.js features and API.</p> 
+          </a>  
 
           <a href="https://nextjs.org/learn" className={styles.card}>
             <h3>Learn &rarr;</h3>
@@ -98,7 +105,7 @@ export default function Home() {
         }
       `}</style>
 
-      <style jsx global>{`
+      <style jsx global>{` 
         html,
         body {
           padding: 0;
