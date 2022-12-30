@@ -36,12 +36,26 @@ export default function Home() {
           </ul>
         </div>
 
+        <div className={styles.vertical}></div>
+
+        <div className={styles.generaldesc}>
+          <h3>A little about me...</h3>
+          <ul>
+            <li>I went to Lehigh University for a B.S in Computer Science and Business</li>
+            <li>I have a passion for traveling</li>
+            <li>My curiosity extends to any field! I'm particularly intrigued by History and the Arts</li>
+          </ul>
+        </div>
+
+        <div className={styles.vertical}></div>
+
         <div className={styles.lifeprojects}>
           <h3 className={styles.lifetitle}>Life Projects</h3>
 
 
           <div className={styles.phototry}>
-            <Image src="/original.jpg.webp"
+            <Image className={styles.photo2}
+            src="/original.jpg.webp"
             alt="Poetry picture"
             width="300"
             height="250"
@@ -50,12 +64,15 @@ export default function Home() {
               Photography
             </h3>
             </div>
-          <div className={styles.phototry}>
-            <Image src="/original.jpg.webp"
+          <div className={styles.phototry2}>
+            <Link href="/projects/poetry">
+            <Image className={styles.photo1}
+            src="/original.jpg.webp"
             alt="Poetry picture"
             width="300"
             height="250"
             />
+            </Link>
             <h3>
               Poetry
             </h3>

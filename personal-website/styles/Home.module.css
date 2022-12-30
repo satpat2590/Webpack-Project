@@ -11,6 +11,23 @@
   margin: 1rem auto 1rem;
 }
 
+.generaldesc {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: larger;
+  width: 90%;
+}
+
+.generaldesc ul li{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.vertical {
+  border-left: 2px solid black; 
+  height: 350px;
+}
+
 .container a{
   text-decoration: none;
   text-decoration-color: #FFFFFF;
@@ -65,7 +82,7 @@
 
 .phototry h3{
   position: absolute;
-  left: 40%;
+  left: 75%;
   bottom: -30px;
 }
 
@@ -75,7 +92,35 @@
   margin: auto;
   bottom: -125px;
   border: 5px solid black;
+}
 
+.photo1 {
+  left: 40px;
+}
+
+.phototry2 {
+  margin: 5rem;
+  padding: auto;
+  float: left;
+  display: flex;
+  position: relative;
+  height: 15%;
+  width: 15%;
+}
+
+
+.phototry2 h3 {
+  position: absolute;
+  left: 135%;
+  bottom: -30px;
+}
+
+.phototry2 img {
+  border-radius: 10px;
+  position: absolute;
+  margin: auto;
+  bottom: -125px;
+  border: 5px solid black;
 }
 
 
