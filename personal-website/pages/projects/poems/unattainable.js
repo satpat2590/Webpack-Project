@@ -116,18 +116,7 @@ export default function Unattainable() {
         </h4>
         <br></br>
     </div>
-
-
-
-
-
-
-
-
-
 </>
 
     );
-
-
 }

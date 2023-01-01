@@ -9,14 +9,14 @@ export default function Poetcard( {children} ) {
     return (
        <>
         <div className={styles.highlights}>
-            <Link href="projects/poems/darkness">
+            <Link href="./poems/darkness">
                 <div className={styles.card}>
                     <div className={styles.cardinfo}>
                         <p>Darkness (2020)</p>
                     </div>
                     <Image src="/images/philosophy2.png" 
                     alt="Poetry titled 'Darkness'"
-                    height="200"
+                    height="270"
                     width="200"
                     />
                 </div>
@@ -29,52 +29,52 @@ export default function Poetcard( {children} ) {
                     </div>
                     <Image src="/images/philosophy2.png" 
                     alt="Poetry titled 'Deteriorating'"
-                    height="200"
+                    height="270"
                     width="200"
                     />
                 </div>
             </Link>
 
-            <Link href="projects/poems/philosophy">
+            <Link href="./poems/philosophy">
                 <div className={styles.card}>
                     <div className={styles.cardinfo}>
                         <p>Philosophy I (2021)</p>
                     </div>
                     <Image src="/images/philosophy2.png" 
                     alt="Poetry titled 'Philosopy I'"
-                    height="200"
+                    height="270"
                     width="200"
                     />
                 </div>
             </Link>
 
-            <Link href="projects/poems/unattainable">
+            <Link href="./poems/unattainable">
                 <div className={styles.card}>
                     <div className={styles.cardinfo}>
                         <p>Unattainable (2018)</p>
                     </div>
                     <Image src="/images/philosophy2.png" 
                     alt="Poetry titled 'Unattainable'"
-                    height="200"
+                    height="270"
                     width="200"
                     />
                 </div>
             </Link>
 
-            <Link href="projects/poems/split">
+            <Link href="./poems/split">
                 <div className={styles.card}>
                     <div className={styles.cardinfo}>
                         <p>Split (2020)</p>
                     </div>
                     <Image src="/images/philosophy2.png" 
                     alt="Poetry titled 'Split'"
-                    height="200"
+                    height="270"
                     width="200"
                     />
                 </div>
             </Link>
 
-            <Link href="projects/poems/definition">
+            <Link href="./poems/definition">
                 <div className={styles.card}>
                     <div className={styles.cardinfo}>
                         <p>Definition (2017)</p>
@@ -82,13 +82,13 @@ export default function Poetcard( {children} ) {
                     <Image 
                     src="/images/philosophy2.png" 
                     alt="Poetry titled 'Definition'"
-                    height="200"
+                    height="270"
                     width="200"
                     />
                 </div>
             </Link>
 
-            <Link href="projects/poems/philosophy2">
+            <Link href="./poems/philosophy2">
                 <div className={styles.card}>
                     <div className={styles.cardinfo}>
                         <p>Philosophy II (2021)</p>
@@ -96,13 +96,13 @@ export default function Poetcard( {children} ) {
                     <Image 
                     src="/images/philosophy2.png" 
                     alt="Poetry titled 'Philosophy II'"
-                    height="200"
+                    height="270"
                     width="200"
                     />
                 </div>
             </Link>
 
-            <Link href="projects/poems/narcissism">
+            <Link href="./poems/narcissism">
                 <div className={styles.card}>
                     <div className={styles.cardinfo}>
                         <p>Narcissism (2021)</p>
@@ -110,13 +110,13 @@ export default function Poetcard( {children} ) {
                     <Image 
                     src="/images/philosophy2.png" 
                     alt="Poetry titled 'Narcissism'"
-                    height="200"
+                    height="270"
                     width="200"
                     />
                 </div>
             </Link>
 
-            <Link href="projects/poems/obscurity">
+            <Link href="./poems/obscurity">
                 <div className={styles.card}>
                     <div className={styles.cardinfo}>
                         <p>Obscurity (2021)</p>
@@ -124,7 +124,7 @@ export default function Poetcard( {children} ) {
                     <Image 
                     src="/images/philosophy2.png" 
                     alt="Poetry titled 'Obscurity'"
-                    height="200"
+                    height="270"
                     width="200"
                     />
                 </div>

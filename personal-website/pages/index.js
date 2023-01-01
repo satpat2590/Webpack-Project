@@ -55,7 +55,7 @@ export default function Home() {
 
           <div className={styles.phototry}>
             <Image className={styles.photo2}
-            src="/original.jpg.webp"
+            src="/images/coliseum.jpg"
             alt="Poetry picture"
             width="300"
             height="250"
@@ -67,7 +67,7 @@ export default function Home() {
           <div className={styles.phototry2}>
             <Link href="/projects/poetry">
             <Image className={styles.photo1}
-            src="/original.jpg.webp"
+            src="/images/forest.jpg"
             alt="Poetry picture"
             width="300"
             height="250"
@@ -83,10 +83,10 @@ export default function Home() {
 
         <div className={styles.grid}>
 
-          <a href="https://nextjs.org/docs" className={styles.card}>
+          <Link href="/about" className={styles.card}>
             <h3>About &rarr;</h3>
             <p>More information on me, my academics, and my overall life journey!</p>
-          </a>
+          </Link>
 <hr></hr>
 
           <Link href="/projects" className={styles.card}>
@@ -94,23 +94,17 @@ export default function Home() {
             <p>Take a look at some of the projects I've worked on or are currently in the progress of working on</p>
           </Link>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
+          <Link href="/introzone" className={styles.card}>
             <h3>CS Beginner/Refresh Zone &rarr;</h3>
             <p>Discover some small projects with extensive documentation meant to entice learning and also refreshing concepts</p>
-          </a>
+          </Link>
 
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
+          <Link href="/contact" className={styles.card}>
             <h3>Contact &rarr;</h3>
             <p>
               Have any questions or wish to send me a message? Click here to do so! 
             </p>
-          </a>
+          </Link>
         </div>
         </div>
       </main>

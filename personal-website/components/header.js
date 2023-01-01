@@ -21,9 +21,9 @@ function Header( {children} ) {
                 </Link>
                 <div className={headstyle.navlinks} id="navLink">
                     <ul>
-                        <li><Link href="/about" className={headstyle.undaline}>About</Link></li>
-                        <li><Link href="/projects" className={headstyle.undaline}>Projects</Link></li>
-                        <li><Link href="/contact" className={headstyle.undaline}>Contact</Link></li>
+                        <li><Link href="/about" className={headstyle.undaline}>about</Link></li>
+                        <li><Link href="/projects" className={headstyle.undaline}>projects</Link></li>
+                        <li><Link href="/contact" className={headstyle.undaline}>contact</Link></li>
                     </ul>
                 </div>
             </nav> 

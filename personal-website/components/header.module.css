@@ -1,3 +1,34 @@
+@font-face {
+    font-family: 'Switzer-Regular';
+    src: url('../styles/fonts/Switzer-Regular.woff2') format('woff2'),
+        url('../styles/fonts/Switzer-Regular.woff') format('woff'),
+        url('../styles/fonts/Switzer-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Switzer-Bold';
+    src: url('../styles/fonts/Switzer-Bold.woff2') format('woff2'),
+        url('../styles/fonts/Switzer-Bold.woff') format('woff'),
+        url('../styles/fonts/Switzer-Bold.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Basteleur-Moonlight';
+    src: url('../styles/basteleur-master/fonts/webfonts/Basteleur-Moonlight.woff2') format('woff2'),
+        url('../styles/basteleur-master/fonts/webfonts/Basteleur-Moonlight.woff') format('woff'),
+        url('../styles/basteleur-master/fonts/ttf/Basteleur-Moonlight.ttf') format('truetype');
+    font-weight: 100;
+    font-display: swap;
+    font-style: normal;
+}
+
 .navbar h1 {
     margin: 0;
     padding: 0;
@@ -13,6 +44,7 @@
     background-color: #C8B7A6;
     text-decoration: none;
     font-size: 25px;
+    font-family: 'Basteleur-Moonlight';
 }
 
 .navbar a {
@@ -41,6 +73,7 @@
     flex: 1;
     text-align: right;
     text-decoration: none;
+    font-family: 'Switzer-Regular';
 }
 
 .navlinks a {
@@ -58,7 +91,7 @@
     color: black;
 }
 
-.nav-links ul li::after {
+/* .navlinks ul li::after {
     content: '';
     width: 0;
     height: 2px;
@@ -68,6 +101,6 @@
     transition: 0.5s;
 }
 
-.nav-links ul li:hover::after {
+.navlinks ul li:hover::after {
     width: 100%;
-}
+} */
