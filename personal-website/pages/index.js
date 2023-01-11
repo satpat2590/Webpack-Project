@@ -1,6 +1,5 @@
-import Head from 'next/head'
+import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-import Header from '../components/Header';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -10,7 +9,6 @@ import Image from 'next/image';
   General overview of the projects, who I am, and what I'm interested in. 
 
   Links to my GitHub, GitLab, and social media are linked within my website. 
-
 
 */
 
@@ -28,11 +26,9 @@ export default function Home() {
 
           <h3>Here are links to my external portfolio:</h3>
           <ul>
-            <nav className={styles.proplist}>
             <li><a href="https://github.com/satpat2590" className={styles.undaline}><p>Github</p></a></li>
             <li><a href="linkedin.com/satpat2590" className={styles.undaline}><p>LinkedIn</p></a></li>
             <li><a href="gitlab.com/satpat2590" className={styles.undaline}><p>Gitlab</p></a></li>
-            </nav>
           </ul>
         </div>
 
@@ -41,8 +37,12 @@ export default function Home() {
         <div className={styles.generaldesc}>
           <h3>A little about me...</h3>
           <ul>
-            <li>I went to Lehigh University for a B.S in Computer Science and Business</li>
-            <li>I have a passion for traveling</li>
+            <li>My passion for computers started when I was in High School, primarily to play PC games</li>
+              <ul>
+                <li>I built my first computer in my Senior year of High School</li>
+                <li>My first real programming language was Scratch, which I used to build an "actions" based game in my senior year of High School</li>
+              </ul>
+            <li>I love traveling and learning about new cultures</li>
             <li>My curiosity extends to any field! I'm particularly intrigued by History and the Arts</li>
           </ul>
         </div>
@@ -54,28 +54,20 @@ export default function Home() {
 
 
           <div className={styles.phototry}>
-            <Image className={styles.photo2}
-            src="/images/coliseum.jpg"
-            alt="Poetry picture"
-            width="300"
-            height="250"
-            />
-            <h3>
-              Photography
-            </h3>
-            </div>
+            <button className={styles.button89} role="button"><Image src="/photo.svg"
+                alt="Book image"
+                height="100"
+                width="100"
+              ></Image><h3>Photography</h3></button>
+          </div>
           <div className={styles.phototry2}>
             <Link href="/projects/poetry">
-            <Image className={styles.photo1}
-            src="/images/forest.jpg"
-            alt="Poetry picture"
-            width="300"
-            height="250"
-            />
+          <button className={styles.button89} role="button">              <Image src="/book.svg"
+                alt="Book image"
+                height="100"
+                width="100"
+              ></Image><h3>Poetry</h3></button>
             </Link>
-            <h3>
-              Poetry
-            </h3>
           </div>
         </div>
   

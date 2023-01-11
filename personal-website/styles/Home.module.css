@@ -1,6 +1,7 @@
 .fullpage {
-  font-size: 20px;
-  font-family: 'Basteleur-Moonlight';
+  font-size: 15px;
+  /* font-family: 'Basteleur-Moonlight'; */
+  font-family: 'Didot';
 }
 
 .container {
@@ -12,11 +13,24 @@
   margin: 1rem auto 1rem;
 }
 
+.portfolio ul li{
+  list-style-type:none;
+  margin: 1rem 0 0 1rem;
+}
+
+.portfolio ul li p{
+  text-decoration: none;
+
+
+}
+
 .generaldesc {
+  margin-left: 2rem;
+  margin-right: 2rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  font-size: larger;
-  width: 90%;
+  /* height: 100%; */
+  width: 100%; 
 }
 
 .generaldesc ul li{
@@ -26,7 +40,7 @@
 
 .vertical {
   border-left: 2px solid black; 
-  height: 350px;
+  height: 400px;
 }
 
 .container a{
@@ -36,12 +50,11 @@
 
 .portfolio {
   float: left;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   margin-left: 2rem;
   margin-right: 2rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  font-size: 20px;
 }
 
 .portfolio a {
@@ -52,8 +65,10 @@
 
 .lifeprojects {
   margin-top: 2rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  /* margin-left: 2rem;
+  margin-right: 2rem; */
+  padding-left: 2rem;
+  padding-right: 2rem;
   float: right;
   /* border: red 1px solid; */
   width: 100%;
@@ -67,15 +82,12 @@
 
 .lifetitle {
   position: relative;
-  top: -45px;
   font-weight: bolder;
-  font-size: 20px;
-  font-family: 'Basteleur-Moonlight';
+  /* font-family: 'Basteleur-Moonlight'; */
 }
 
 .phototry{
-  margin: 5rem;
-  padding: auto;
+  margin: 3rem;
   float: left;
   display: flex;
   position: relative;
@@ -85,28 +97,64 @@
 }
 
 
-.phototry h3{
+/* .phototry h3{
   position: absolute;
   left: 75%;
   bottom: -30px;
-}
+} */
 
-.phototry img {
+/* .phototry img {
   border-radius: 10px;
   position: absolute;
   margin: auto;
   bottom: -125px;
   border: 5px solid black;
   opacity: 60%;
+} */
+
+
+
+
+/* CSS */
+.button89 {
+  --b: 3px;   
+  --s: .45em; 
+  --color: #373B44;
+  
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
-.photo1 {
-  left: 40px;
+.button89:hover,
+.button89:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
 }
+
+.button89:active {
+  background: var(--color);
+  color: #fff;
+}
+
+
 
 .phototry2 {
-  margin: 5rem;
-  padding: auto;
+  margin: 3rem;
   float: left;
   display: flex;
   position: relative;
@@ -115,20 +163,20 @@
 }
 
 
-.phototry2 h3 {
+/* .phototry2 h3 {
   position: absolute;
   left: 135%;
   bottom: -30px;
-}
+} */
 
-.phototry2 img {
+/* .phototry2 img {
   border-radius: 10px;
   position: absolute;
   margin: auto;
   bottom: -125px;
   border: 5px solid black;
   opacity: 60%;
-}
+} */
 
 
 .undaline {
@@ -139,7 +187,7 @@
 .undaline p{
   text-decoration: none;
   margin: 0;
-  font-size: 1.25rem;
+  /* font-size: 1.25rem; */
   line-height: 1.5;
 }
 
@@ -155,36 +203,20 @@
 }
 
 .undaline:hover::after {
-  width: 6%;
+  width: 20%;
 }
 
 .card p {
   margin: 0;
-  font-size: 1.25rem;
+  font-size: 15px;
   line-height: 1.5;
 }
 
 
-
-.title h2{
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.title {
-  text-align: left;
-}
-
-.title,
-.description {
-  text-align: left;
-}
-
-
-.description {
+/* .description {
   line-height: 1.5;
   font-size: 1.5rem;
-}
+} */
 
 .grid {
   display: flex;
@@ -216,12 +248,12 @@
 
 .card h3 {
   margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
 }
 
 .card p {
   margin: 0;
-  font-size: 1.25rem;
+  /* font-size: 1.25rem; */
   line-height: 1.5;
 }
 

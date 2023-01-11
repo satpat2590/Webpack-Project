@@ -8,8 +8,11 @@ export default function Layout ( {children }) {
     return (
         <>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Sat P.</title>
+        <link rel="icon" href="/images/logo.png" />
+        <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+        integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous"/>
       </Head>
 
         <Header />
@@ -22,8 +25,7 @@ export default function Layout ( {children }) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Created and hosted by{' '}
-          <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
+          <img src="/images/logo.png" alt="Sat's Logo" className={styles.logo} />
         </a>
       </footer>
 

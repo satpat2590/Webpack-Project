@@ -1,62 +1,73 @@
-
-
 .poem {
-    text-align: center; 
-    font-size: 20px;
+    text-align: center;
+}
+
+.biglink {
+    text-decoration: none;
 }
 
 .highlights {
-    width: 80%;
+    /* width: 80%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     background-color: var(--white);
-    padding: 1rem;
+    padding: 1rem; */
+    flex-flow: row wrap;
+    display: flex;
+    box-sizing: border-box;
+    border-color: #FFFF;
+    background-color: #FFFF;
+    text-align: center;
+    margin: 4rem 0 0 4rem;
 }
 
-h2.button.bouncy {
-    border: 2px solid;
-    padding: 7px;
-    box-shadow: 6px 4px 5px;
-    border-width: 3px 3px;
-    width: 30%;
-
-}
 
 .card {
-    /* background-color: var(--dark-gray); */
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 150px;
     margin: 0.5rem;
     box-shadow: 0 0 0.4rem 0.3rem #888;
     transition: 0.25s;
     border-radius: 0.5rem;
     position: relative;
+
+    flex: 0 0 33.333%;
+    display: flex;
+    padding: 15px; /* gutter width */
+    border-width: 0px;
+
+
+    /* border-radius: 0px; */
+    /* box-shadow: 0px 30px 40px -20px black; */
+    /* padding: 30px;
+    margin: 20px;   */
+    text-decoration: none;
+    color: black;
 }
 
 .card:hover {
     box-shadow: 0 0 0.5rem 0.2rem #888;
 }
 
-.card img {
-    position: relative;
-    border-radius: 0.5rem;
-    width: inherit;
+.cardinfo {
+    /* box-shadow: 0 0 4px rgba(0,0,0,0.4); */
+    flex: 0 0 100%;
+    /* box-shadow: 0 0 4px rgba(0,0,0,0.4); */
 }
 
-.cardinfo {
-    font-size: 1.2rem;
-    font-weight: bold;
-    bottom: 20px;
+
+.cardinfo img {
+    float: right;
     position: absolute;
-    /* z-index: 1; */
-    /* background-color: #eee; */
-    opacity: 0.9;
-    text-align: center;
-    /* border-bottom-left-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem; */
-    width: inherit;
-    height: 25px;
-    text-decoration: none;
-    color: black;
+    bottom: 5px;
+    right: 5px;
+}
+
+.cardinfo h2 {
+    font-size: 17px;
+}
+
+.cardinfo p {
+    font-size: 14px;
 }
